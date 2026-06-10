@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Remotes -->
+  <remote name="gutssnv"
+          fetch="https://github.com/gutssnv"
+          revision="lineage-23.0" />
+
+  <remote name="pos-hound"
+          fetch="https://github.com/pos-hound"
+          revision="sixteen-qpr2" />
+
+  <!-- device -->
+  <project path="device/infinix/X6882"        name="device_infinix_X6882"          remote="gutssnv" />
+  <project path="device/infinix/X6882-kernel"  name="device_infinix_X6882-kernel"   remote="gutssnv" />
+  <project path="device/mediatek/sepolicy_vndr" name="platform_mediatek_sepolicy_vndr" remote="pos-hound" />
+
+  <!-- hardware -->
+  <project path="hardware/mediatek" name="platform_hardware_mediatek" remote="pos-hound" />
+
+  <!-- vendor -->
+  <project path="vendor/infinix/X6882"  name="platform_vendor_infinix_X6882"  remote="gutssnv" />
+  <project path="vendor/mediatek/ims"   name="platform_vendor_mediatek_ims"   remote="pos-hound" />
+
+</manifest>
