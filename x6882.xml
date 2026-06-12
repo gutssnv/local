@@ -4,7 +4,7 @@
   <!-- Remotes -->
   <remote name="gutssnv"
           fetch="https://github.com/gutssnv"
-          revision="lineage-23.0" />
+          revision="16.2" />
 
   <remote name="pos-hound"
           fetch="https://github.com/pos-hound"
