@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- Remotes -->
-  <remote name="gutssnv"
-          fetch="https://github.com/gutssnv"
-          revision="16.2" />
+   <!-- Remotes -->
+   <remote name="gutssnv"
+            fetch="https://github.com/gutssnv"
+            revision="16.2" />
 
-  <remote name="pos-hound"
-          fetch="https://github.com/pos-hound"
-          revision="sixteen-qpr2" />
+   <remote name="pos-hound"
+            fetch="https://github.com/pos-hound"
+            revision="sixteen-qpr2" />
 
-  <!-- device -->
-  <project path="device/infinix/X6882"        name="device_infinix_X6882"          remote="gutssnv" />
-  <project path="device/infinix/X6882-kernel"  name="device_infinix_X6882-kernel"   remote="gutssnv" />
-  <project path="device/mediatek/sepolicy_vndr" name="platform_mediatek_sepolicy_vndr" remote="pos-hound" />
+   <remote name="MillenniumOSS"
+	    fetch="https://github.com/MillenniumOSS"
+	    clone-depth="1" />
 
-  <!-- hardware -->
-  <project path="hardware/mediatek" name="platform_hardware_mediatek" remote="pos-hound" />
+ <!-- device -->
+ <project path="device/infinix/X6882"        name="device_infinix_X6882"          remote="gutssnv" />
+ <project path="device/infinix/X6882-kernel"  name="device_infinix_X6882-kernel"   remote="gutssnv" />
+ <project path="vendor/infinix/X6882"  name="platform_vendor_infinix_X6882"  remote="gutssnv" />
 
-  <!-- vendor -->
-  <project path="vendor/infinix/X6882"  name="platform_vendor_infinix_X6882"  remote="gutssnv" />
-  <project path="vendor/mediatek/ims"   name="platform_vendor_mediatek_ims"   remote="pos-hound" />
+ <!-- Remove Projects -->
+ <remove-project path="packages/apps/Aperture" />
 
+ <!-- Device Support stuffs -->
+ <project path="hardware/mediatek" name="platform_hardware_mediatek" remote="pos-hound" />
+ <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="MillenniumOSS" revision="sixteen-qpr2-rebase"/>
+ <project path="vendor/mediatek/ims" name="android_vendor_mediatek_ims" remote="MillenniumOSS" revision="sixteen-oem" />
+ <project path="packages/apps/Aperture" name="android_packages_apps_Aperture" remote="MillenniumOSS" revision="lineage-23.2" />
 </manifest>
