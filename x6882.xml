@@ -4,7 +4,7 @@
    <!-- Remotes -->
    <remote name="gutssnv"
             fetch="https://github.com/gutssnv"
-            revision="16.2" />
+            revision="lineage-23.2" />
 
    <remote name="pos-hound"
             fetch="https://github.com/pos-hound"
@@ -17,7 +17,7 @@
  <!-- device -->
  <project path="device/infinix/X6882"        name="device_infinix_X6882"          remote="gutssnv" />
  <project path="device/infinix/X6882-kernel"  name="device_infinix_X6882-kernel"   remote="gutssnv" />
- <project path="vendor/infinix/X6882"  name="platform_vendor_infinix_X6882"  remote="gutssnv" />
+ <project path="vendor/infinix/X6882"  name="vendor_infinix_X6882"  remote="gutssnv" />
 
  <!-- Remove Projects -->
  <remove-project path="packages/apps/Aperture" />
