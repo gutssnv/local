@@ -3,16 +3,19 @@
 
    <!-- Remotes -->
    <remote name="gutssnv"
-            fetch="https://github.com/gutssnv"
+            fetch="git@github.com:gutssnv"
             revision="lineage-23.2" />
 
    <remote name="pos-hound"
-            fetch="https://github.com/pos-hound"
+            fetch="git@github.com:pos-hound"
             revision="sixteen-qpr2" />
 
    <remote name="MillenniumOSS"
 	    fetch="https://github.com/MillenniumOSS"
 	    clone-depth="1" />
+
+   <remote name="hound-lab"
+            fetch="git@github.com:hound-lab" />
 
  <!-- device -->
  <project path="device/infinix/X6882"        name="device_infinix_X6882"          remote="gutssnv" />
@@ -27,4 +30,7 @@
  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="MillenniumOSS" revision="sixteen-qpr2-rebase"/>
  <project path="vendor/mediatek/ims" name="android_vendor_mediatek_ims" remote="MillenniumOSS" revision="sixteen-oem" />
  <project path="packages/apps/Aperture" name="android_packages_apps_Aperture" remote="MillenniumOSS" revision="lineage-23.2" />
+
+ <!-- Keys -->
+ <project path="vendor/lineage-priv/keys" name="lineage-priv_keys" remote="hound-lab" revision="lineage-23.0" />
 </manifest>
